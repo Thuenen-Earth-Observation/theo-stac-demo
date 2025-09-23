@@ -11,11 +11,10 @@ catalog = Client.open(STACK_ENDPOINT)
 [print(i) for i in catalog.get_collections()]
 
 # Define bounding box
-lon, lat, lon_extent, lat_extent = 8.325, 52.515, 0.075, 0.070
-bbox = [lon - lon_extent, lat - lat_extent, lon + lon_extent, lat + lat_extent]
+bbox = [8.25, 52.445, 8.4, 52.585]
 
 search = catalog.search(
-    collections="crop-type-map-v202",
+    collections="crop-type-map-latest",
     bbox=bbox,
     datetime="2017-01-01/2025-12-31"
 )
