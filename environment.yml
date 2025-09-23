@@ -1,0 +1,14 @@
+name: stac-demo
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - rasterio
+  - xarray
+  - rioxarray
+  - pip
+  - pip:
+      - geogif
+      - stackstac
+      - pystac-client
