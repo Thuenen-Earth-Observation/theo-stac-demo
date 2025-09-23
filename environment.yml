@@ -1,4 +1,4 @@
-name: stac-demo
+name: theo-stac-demo
 channels:
   - conda-forge
 dependencies:
