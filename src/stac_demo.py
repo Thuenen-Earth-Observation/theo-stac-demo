@@ -1,6 +1,6 @@
-# Import necessary libraries: pystac_client to interact with the STAC API, stackstac to create data stacks, and geogif to generate animated GIFs.
 from pystac_client import Client
 import stackstac
+import pandas as pd
 import geogif
 
 # Define the STAC API endpoint. This URL points to the STAC service providing remote sensing data.
@@ -40,6 +40,10 @@ mosaic_stack = stackstac.stack(
     bounds_latlon=bbox,
     epsg=3035
 ) 
+
+# Display the crop type lookup table (LUT) from the mosaic stack's metadata
+crop_type_lut = mosaic_stack["raster:bands"].item()["categories"].items()
+pd.DataFrame(list(crop_type_lut), columns=["Value", "Crop type"])
 
 # Select only the 'data' band from the mosaic stack for visualization.
 mosaic_stack = mosaic_stack.sel(band=["data"])
