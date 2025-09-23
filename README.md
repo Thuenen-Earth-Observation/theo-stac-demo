@@ -1,6 +1,6 @@
 # Thünen Earth Observation (ThEO) STAC Demo
 
-![Crop Type Series](output/crop_type_series.gif)
+<img src="output/crop_type_series.gif"  width="40%" height="40%">
 
 This project demonstrates how to work with STAC (SpatioTemporal Asset Catalog) data by retrieving crop type maps from the [ThEO STAC API](https://eodata.thuenen.de), processing the data, and generating an animated GIF. The project uses Python along with libraries such as `pystac_client`, `stackstac`, and `geogif`.
 
