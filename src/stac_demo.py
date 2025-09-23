@@ -33,5 +33,5 @@ mosaic_stack = mosaic_stack.sel(band=["data"])
 
 gif = geogif.dgif(mosaic_stack, fps=1, cmap="tab20", bytes=True).compute()
 
-with open("ti_crop_type.gif", "wb") as f:
+with open("output/crop_type_series.gif", "wb") as f:
     f.write(gif)
