@@ -1,6 +1,6 @@
-# theo-stac-demo
+# Thünen Earth Observation (ThEO) STAC Demo
 
-This project demonstrates how to work with STAC (SpatioTemporal Asset Catalog) data by retrieving crop type maps, processing the data, and generating an animated GIF. The project uses Python along with libraries such as `pystac_client`, `stackstac`, and `geogif`.
+This project demonstrates how to work with STAC (SpatioTemporal Asset Catalog) data by retrieving crop type maps from the [ThEO STAC API](https://eodata.thuenen.de), processing the data, and generating an animated GIF. The project uses Python along with libraries such as `pystac_client`, `stackstac`, and `geogif`.
 
 ## Table of Contents
 
@@ -12,6 +12,8 @@ This project demonstrates how to work with STAC (SpatioTemporal Asset Catalog) d
 - [License](#license)
 
 ## Overview
+
+This repository is aimed at demonstrating how to work with remote sensing data using the [ThEO STAC API](https://eodata.thuenen.de). The primary goal is to show how spatial data can be accessed, processed, and visualized effectively. In particular, the script located in `src/stac_demo.py` retrieves crop type maps from the [ThEO STAC API](https://eodata.thuenen.de) for a defined geographic area and time range, stacks the data into a mosaic using `stackstac`, and generates an animated GIF using `geogif`. This visual representation helps illustrate temporal variations in crop types.
 
 The script located in `src/stac_demo.py` connects to a STAC API, stacks and processes the resulting data, and eventually produces an animated GIF stored in the `output` directory.
 
