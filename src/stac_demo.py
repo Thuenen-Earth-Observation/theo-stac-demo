@@ -13,7 +13,7 @@ catalog = Client.open(STACK_ENDPOINT)
 [print(i) for i in catalog.get_collections()]
 
 # Define the geographic bounding box as a tuple (min_lon, min_lat, max_lon, max_lat) for the area of interest.
-bbox = (8.25, 52.445, 8.4, 52.585)
+bbox = (10.067037606, 52.191323852, 10.50465365, 52.375267045)
 
 # Search the catalog for items within the specified bounding box, collection, and date range.
 # - collections: "crop-type-map-latest" restricts the search to the latest crop type maps.
@@ -39,7 +39,7 @@ mosaic_stack = stackstac.stack(
     resolution=(10,10),
     bounds_latlon=bbox,
     epsg=3035
-) 
+)
 
 # Display the crop type lookup table (LUT) from the mosaic stack's metadata
 crop_type_lut = mosaic_stack["raster:bands"].item()["categories"].items()
