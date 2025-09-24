@@ -13,6 +13,7 @@ This project demonstrates how to work with STAC (SpatioTemporal Asset Catalog) d
   - [Using Conda](#using-conda)
   - [Using Micromamba](#using-micromamba)
 - [Running the Code](#running-the-code)
+- [Interactive Notebook](#interactive-notebook)
 - [License](#license)
 
 ## Overview
@@ -64,6 +65,10 @@ python src/stac_demo.py
 ```
 
 The script will connect to the STAC API, process the crop type data, and generate an animated GIF saved in the `output` folder.
+
+## Interactive Notebook
+
+For interactive exploration, you can use the provided Jupyter notebook `src/stac_demo_notebook.ipynb`. This notebook allows you to step through the workflow, experiment with parameters, and visualize results interactively as an alternative to running the Python script.
 
 ## License
 
