@@ -13,7 +13,7 @@ catalog = Client.open(STACK_ENDPOINT)
 [print(i) for i in catalog.get_collections()]
 
 # Define the geographic bounding box as a tuple (min_lon, min_lat, max_lon, max_lat) for the area of interest.
-bbox = (10.067037606, 52.191323852, 10.50465365, 52.375267045)
+bbox = (10.231, 52.26, 10.341, 52.306)
 
 # Search the catalog for items within the specified bounding box, collection, and date range.
 # - collections: "crop-type-map-latest" restricts the search to the latest crop type maps.
